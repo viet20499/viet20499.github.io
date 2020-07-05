@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 40vh 0;
+            background-color: #fff
+        }
+
+        .heart {
+            animation: heartbeat 1s infinite;
+            background-color: red;
+            display: inline-block;
+            height: 50px;
+            margin: 0 10px;
+            position: relative;
+            top: 0;
+            transform: rotate(-45deg);
+            position: absolute;
+            left: 45%;
+            top: 45%;
+            width: 50px;
+            float: right;
+        }
+        
+        .heart:before,
+        .heart:after {
+            content: "";
+            background-color: red;
+            border-radius: 50%;
+            height: 50px;
+            position: absolute;
+            width: 50px;
+        }
+
+        .heart:before {
+            top: -25px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 25px;
+            top: 0;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+
+            20% {
+                transform: scale(1.25) rotate(-45deg);
+            }
+
+            40% {
+                transform: scale(1.5) rotate(-45deg);
+            }
+        }
+        .wrapper {
+    width: 40%;
+    margin: 40px auto;
+    float: right;
+}
+
+div.gallery {
+    margin-top: 30px;
+}
+
+div.gallery ul {
+    list-style-type: none;
+    margin-left: 35px;
+}
+div.gallery ul li, div.gallery li img {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+div.gallery ul li {
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    padding: 5px;
+    z-index: 0;
+}
+div.gallery ul li:hover {
+    z-index: 5;
+}
+div.gallery ul li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid green;
+    padding: 5px;
+    width: 130px;
+    height: 130px;
+    background:black;
+}
+div.gallery ul li img:hover {
+    width: 200px;
+    height: 200px;
+    margin-top: -130px;
+    margin-left: -130px;
+    top: 65%;
+    left: 65%;
+}
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .wrapper {
+        width: 300px;
+    }
+
+    div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="heart"></div>
+    <div class="wrapper">
+        <div class="gallery">
+            <ul>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image001-1471429565112/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image003-1471429574591/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image004-1471429574592/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image005-1471429574594/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image006-1471429574596/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image007-1471429574597/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image008-1471429574598/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image009-1471429574600/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+                <li><img src="https://gamek.mediacdn.vn/k:2016/image010-1471429574601/diemlaitoanbocacnhanvattrongphimhoathinhonepiecegoldsaptoi.jpg"></li>
+            </ul>
+    </div>
+</body>
+
+</html>
