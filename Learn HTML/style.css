@@ -1,0 +1,73 @@
+p{
+  color: yellow;  
+  background-color: red;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+span{
+    color: black;
+}
+a{
+    color: yellow;
+    text-decoration: none;
+}
+/* Selector 
+Chọn tất cả :  chọn toàn bộ phần tử HTML 
+*{
+} 
+*/
+.heading{    /* khi sử dụng 1 class phải bắt đầu bằng dấu chấm */
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Bộ chọn id : bắt đầu bằng dấu thăng (#)
+Trong 1 trang id chỉ xuất hiện 1 lần */
+#heading{
+  
+}
+ul>li>a{
+color: black;
+}
+li+a{
+  color: blue;
+}
+img.cangiua{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+/* Nguồn
+      inline css
+      internal css
+      external css
+/*Tính đặc hiệu 
+      inline css tương đương : 1000
+      id tương đương : 100
+      .p tương đương : 10 (. là class )
+      p tương đương : 1 (không . là thẻ )
+      Style>ID>class>thẻ
+      VD : p.p thì được cộng dồn là 11 điểm
+/* Thứ tự
+Khi có cùng 1 bộ chọn (hoặc tính đặc hiệu ) thì quy tắc sau sẽ ghi đè quy tắc trước 
+Có thể sử dụng !important sau giá trị thuộc tính để ghi đè */
+
+p{
+  color: red;    /* tính đặc hiệu :1 */
+}
+p.p{
+  color: black;  /* tính đặc hiệu :11 */
+}
+body p.p{
+  color: green !important;    /* ghi đè không quan tâm đến tính đặc hiệu*/
+}
+/* khi có nhiều important thì vẫn sẽ áp dụng tính đặc hiệu*/
+
+/* margin : khoảng các giữa 2 phần tử 
+/* boder: viền 
+/* padding: khoảng cách từ lề đến phần nội dung
+*/
