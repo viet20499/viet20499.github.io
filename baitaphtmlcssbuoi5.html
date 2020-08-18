@@ -6,6 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Du Lịch</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 700px;
+            margin: 50px auto;
+            background: #27ae60;
+            height: 50px;
+        }
+
+        .container ul.root {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .container ul.root>li {
+            float: left;
+            height: 50px;
+            position: relative;
+        }
+
+        .container ul.root>li>a {
+            float: left;
+            display: block;
+            height: 50px;
+            text-decoration: none;
+            color: white;
+            line-height: 50px;
+            padding: 0 20px 0 20px;
+        }
+
+        .container ul.root>li>a:hover {
+            background: orange;
+        }
+
+        .container ul.root>li ul.sub {
+            width: 200px;
+            background: orange;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            position: absolute;
+            display: block;
+            top: 50px;
+            left: 0;
+            opacity: 0;
+        }
+
+        .container ul.root>li ul.sub li a {
+            display: block;
+            line-height: 40px;
+            text-decoration: none;
+            color: white;
+            text-indent: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .container ul.root>li:hover ul.sub {
+            opacity: 1;
+        }
+
         body {
             font-family: arial;
             font-size: 16px;
@@ -29,6 +94,7 @@
             padding: 20px;
             font-family: sans-serif;
             background: #f2f2f2;
+
         }
 
         img {
@@ -89,6 +155,7 @@
         .location-listing:hover .location-image img {
             filter: blur(2px);
         }
+
         @media (hover: none) {
             .location-title {
                 opacity: 1;
@@ -102,6 +169,53 @@
 </head>
 
 <body>
+    <div class="container">
+        <ul class="root">
+            <li><a href="">Sanfrancisco</a>
+                <ul class="sub">
+                    <li><a href="">Cầu Cổng Vàng</a></li>
+                    <li><a href="">Đường hoa Lombard</a></li>
+                    <li><a href="">Bến tàu ngư phủ</a></li>
+                </ul>
+            </li>
+            <li><a href="">London</a>
+                <ul class="sub">
+                    <li><a href="">Đài thiên văn Hoàng gia </a></li>
+                    <li><a href="">Tháp Luân Đôn</a></li>
+                    <li><a href="">Cung điện Buckingham</a></li>
+                </ul>
+            </li>
+            <li><a href="">New York</a>
+                <ul class="sub">
+                    <li><a href="">Đảo Ellis</a></li>
+                    <li><a href="">Tòa nhà Empire State</a></li>
+                    <li><a href="">Tượng nữ thần tự do</a></li>
+                </ul>
+            </li>
+            <li><a href="">Cape Town</a>
+                <ul class="sub">
+                    <li><a href="">Núi Bàn</a></li>
+                    <li><a href="">Mũi Hảo Vọng</a></li>
+                    <li><a href="">Biển Boulders</a></li>
+                </ul>
+            </li>
+            <li><a href="">Beijing</a>
+                <ul class="sub">
+                    <li><a href="">Tử Cấm Thành</a></li>
+                    <li><a href="">Vạn Lý Trường Thành</a></li>
+                    <li><a href="">Sân vận động Tổ Chim</a></li>
+                </ul>
+            </li>
+            <li><a href="">Paris</a>
+                <ul class="sub">
+                    <li><a href="">Tháp Eiffel</a></li>
+                    <li><a href="">Bảo Tàng Louvre</a></li>
+                    <li><a href="">Khải Hoàn Môn</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
     <div id="wrapper">
         <div class="gallery">
             <div id="header">
@@ -201,6 +315,7 @@
 
                         </article>
                     </div>
+                    
 </body>
 
 </html>

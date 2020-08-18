@@ -1,0 +1,83 @@
+.img-wrapper img{
+    width: 300px;
+    transition :  transform 1s;
+}
+.img-wrapper:hover img{
+    transform:  scale(2.5);
+    filter: brightness(0.5);
+}
+.img-wrapper{
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+}
+.img-wrapper.overplay{
+    /*display:none;*/
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    background-color: red;
+    opacity: 0.5;
+    color:#ffffff;
+    transition: top 1s;
+}
+.img-wrapper:hover.overplay{
+    /* display:block;*/
+    top:0;
+}
+p:hover{
+    font-size:30px;
+}
+.color{
+    width: 300px;
+    height:300px;
+    background-color: red;
+    /*transition:all 1s ; */
+    position: relative;
+}
+/*.color:hover{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}*/
+.white{
+background-color: #ffff00;
+width: 100px;
+height: 100px;
+position: absolute;
+top:50%;
+right:50%;
+transform:translate(50%,-50%) ;  /*(X: nằm ngang,Y: nằm dọc)*/
+}
+.img{
+    vertical-align: middle;
+}
+.img-wrapper p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:green;
+    font-size: 0;
+    transition: font-size 1s;
+    margin:0;
+}
+.img-wrapper:hover p{
+    font-size: 20px;
+    z-index: 1;
+}
+.text-bg{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 0;
+}
+.img-wrapper:hover .text-bg{
+    bottom:50%;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+    <style>
+        * {
+            margin: 0;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #7E2C8A;
+        }
+
+        content {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .topheader {
+
+            padding: 20px 0;
+
+        }
+
+        .clearfix {
+            overflow: hidden;
+        }
+
+        nav {
+            background-color: #d7d7db;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            padding: 8px 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .textcenter {
+            text-align: center;
+        }
+
+        img.cangiua {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        li{
+            display: inline-block;
+        }
+        .mainmenu-item{
+            position: relative;
+        }
+        .menu-link{
+            font-size: 20px;
+        }
+        .menu-item:hover .menu-link{
+            color: red;
+        }
+        .menu-item> ul { 
+            display: none;
+            position: absolute;
+            top:100%;
+            left:0;
+        }
+        .menu-item:hover > ul{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header mô tả phần thông tin chung của toàn trang-->
+    <header>
+        <div class="container" style="max-width: 900px;
+                    margin-left:auto;
+                    margin-right:auto;"></div>
+
+        <div class="topheader content"><img src="https://static-zmp3.zadn.vn/skins/zmp3-v5.1/images/logo.png" /></div>
+    </header>
+    <!--Navigation thanh điều hướng đến các trang khác nhau-->
+    <nav class="clearfix">
+        <div id="mainmenu " class="content"></div>
+        <ul>
+            <li><a href="">Trang Chủ</a></li>
+            <li><a href="">Giới Thiệu</a></li>
+            <li><a href="">Danh Sách</a></li>
+            <li><a href="">Nhạc Cá Nhân </a></li>
+            <li><a href="">Top 100</a></li>
+            <li><a href="">Video</a></li>
+            <li><a href="">Album</a></li>        
+            <li><a href="">Nghệ Sĩ</a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="" class="menu-link">1</a>
+                <a href="" class="menu-link">2</a>
+                <a href="" class="menu-link">3</a>
+                <a href="" class="menu-link">4</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Phần nội dung chính duy nhất cho mỗi trang (mỗi trang chỉ nên có 1 thẻ main)-->
+    <main></main>
+    <!--Nhóm các phần liên quan với nhau-->
+    <section id="banner">
+        <img src="https://adtima-media.zadn.vn/2019/10/679c56e9-6c70-4bcb-b2be-5025fefa8d93.png" class="cangiua" />
+    </section>
+    <!--một bài viết / nội dung riêng-->
+    <article></article>
+    <!--Thông tin tương tự / liên quan đến nội dung chính -->
+    <aside></aside>
+    <!--Phần chân trang chứa các thông tin chung như bản quyền , ...-->
+    <footer></footer>
+
+    <div></div>
+    <span></span>
+</body>
+
+</html>

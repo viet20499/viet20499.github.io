@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello World")    // script có thể viết trong body hoặc head
+
+       // alert("Hello World")
+       // String : chuỗi
+       /* var name
+       name ="Nguyễn Duy Việt"
+       var user="Nguyễn Văn B"
+       console.log(name)
+       console.log(user)
+
+       console.log(typeof name)
+       console.log(typeof user)*/
+
+      // var firstname="Nguyễn " // sau Nguyễn có 1 dấu cách
+       //var lastname="Việt"
+       //var fullname= firstname + lastname
+       //console.log(fullname)
+
+       // Kiểm tra độ dài 1 chuỗi - length
+       //var lengthfullname= fullname.length
+       //console.log(lengthfullname)
+
+       // Method của String
+       // concat - Cộng chuỗi
+      // var fullname= firstname.concat(" ",lastname)
+       //console.log(fullname)
+       
+       // toUpperCase() - dùng để in hoa
+       //console.log(fullname.toUpperCase());
+      
+        // toLowerCase - dùng để in thường
+        //console.log(fullname.toLowerCase());
+
+        // indexOf - Kiểm tra xem 1 chuỗi có nằm trong chuỗi khác không
+        // trả về vị trí nếu tìm thấy 
+        // không tìm thấy sẽ trả về -1
+
+       // var str="i love you"
+        //var subStr="love"
+       // console.log(str.indexOf(subStr));
+
+        // includes - Kiểm tra xem 1 chuỗi có nằm trong chuỗi khác không
+        // Tìm thấy trả về : True 
+        // Không thấy trả về : False
+        //console.log(str.includes(subStr));
+
+        // Hàm cắt chuỗi
+        //slice(vị trí bắt đầu , vị trí kết thúc)
+       // console.log(str.slice(0, 5));  //( khi in ra sẽ in từ 0 đến 4 bỏ 5)
+       // console.log(str.slice(4));
+
+        // substring()
+       // console.log(str.substring(0,5));   //( vị trí bắt đầu , vị trí kết thúc)
+
+        //substr()
+       // console.log(str.substr(2,2));       //(vị trí bắt đầu , số phần tử cắt)
+
+        // trim() - Loại bỏ khoảng trống ở đầu và cuối chuỗi
+       // console.log(str.trim());
+
+        // split : dùng để string => array
+        //console.log(str.split(" "));
+
+        // Number
+        // var num=10
+        // var num1=8
+        // console.log(num,num1);
+        // console.log(typeof num,typeof num1);
+        // console.log(num+num1);
+        // console.log(num-num1);
+        // console.log(num*num1);
+        // console.log(num/num1);    // chia thường
+        // console.log(num%num1);    // chia lấy dư
+        //console.log(num**num1);   // mũ
+
+        // Làm tròn số 
+        // Math.ceil => làm tròn lên
+        // Math.floor=> làm tròn xuống
+        // Math.round=> làm tròn bình thường
+
+        // Math.min=> Tìm số nhỏ nhất trong danh sách các số
+        // Math.max=> Tìm số lớn nhất trong danh sách các số
+        //console.log(Math.min(1,4,7,9));
+        //console.log(Math.max(1,4,7,9));
+
+        // Math.random()=> random ra 1 số [0 , 1]
+       // console.log(Math.floor(Math.ramdom() * 4))
+
+        // Boolean
+        // Chỉ có 2 giá trị : True or False
+       // var isStatus= true
+        //console.log(isStatus , typeof isStatus);
+       // console.log(!isStatus);
+
+        // Câu lệnh điều kiện : if - else
+        // if (câu lệnh điều kiện){
+            // khối lệnh nếu true
+        //} else {
+            //khối lệnh nếu false
+        // }
+
+        // var isStatus= true 
+        // if(isStatus ){
+        //     console.log("chào buổi sáng");
+        // } else{
+        //     console.log("xin chào");
+        // }
+
+        // var score = 8
+        // if (score>=8.5 && score <=10){
+        //     console.log("A");
+        // } else if( score>=7 && score < 8.5){
+        //     console.log("B");
+        // } else if( score>=6 && score< 7){
+        //     console.log("C");
+        // } else{
+        //     console.log("D");
+        // }
+
+        // switch - case
+        // var month = 8
+        // switch(month){
+        //     case 1:
+        //         console.log("Tháng 1");
+        //         break
+        //     case 2: 
+        //         console.log("Tháng 2");
+        //         break 
+        //     case 3: 
+        //         console.log("Không xác định");
+        //         break
+        // }
+
+        // Array - mảng
+        // var arr = [2,5,12,13,14,15]
+        // var arr1 = [1,2,3,4,5,true,"England"]
+        // console.log(arr1);
+        // console.log(arr1[3]);
+        // arr1[3]="888888"
+        // console.log(arr1);
+        // arr1[7]="HCM"
+        // console.log(arr1);
+        // console.log(arr1.length);
+
+        // console.log(arr.concat(arr1));
+
+        // // Thêm phần tử vào mảng
+        // // Thêm vào cuối mảng => push(new_item)
+        // console.log(arr1.push("Đà Nẵng")); // trả về độ dài mảng mới
+        // console.log(arr1);
+
+        // // Thêm vào đầu mảng =>unshift(new_ item)
+        // console.log(arr1.unshift(true));
+        // console.log(arr1);
+
+        // // Xóa phần tử
+        // // Xóa ở cuối mảng =>pop()
+        // console.log(arr1.pop()); // trả về phần tử bị loại bỏ
+        // console.log(arr1);
+
+        // // Xóa ở đầu mảng =>shift()
+        // console.log(arr1.shift())
+        // console.log(arr1);
+
+        // // indexOf()
+        // console.log(arr.indexOf(5));  // trả về số 
+
+        // // includes
+        // console.log(arr.includes(5));  // trả về true - false
+
+        // slice
+        // var  arr=[2,5,12,13,15]
+        // console.log(arr);
+        // console.log(arr.slice(0,4));
+
+        // //sort(fucntion() {})
+        // // bài tập về nhà
+        // console.log(arr.sort());
+
+        // // reverse() - đảo ngược mảng
+        // console.log(arr.reverse());
+
+        // for loop - Vòng lặp
+        // for , while , do-while , forEach , for.. in, for..of, ......
+       // for(giá trị khởi tạo , điều kiện dừng , bước nhảy ){
+       //     code ....
+       //}
+      var arr =[2,5,3,4,6,30]
+        console.log(arr);
+       for (var i=0;i<arr.length;i++){
+          //console.log(arr[i]);
+    //        if(arr[i]>10 && arr[i] % 15 == 0){
+    //            console.log(arr[i]);
+    //        }
+    //    }
+
+       //break : thoát khỏi vòng lặp
+       // continue: bỏ qua vòng lặp hiện tại
+       if(arr[i] == 4){
+           break
+       }
+       console.log(arr[i]);
+       
+    </script>
+    // <!-- <script src="main.js"></script> -->
+</body>
+
+</html>
